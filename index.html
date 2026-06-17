@@ -6,13 +6,175 @@
     <title>My Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Sections */
+
+section{
+    padding: 70px 10%;
+}
+
+/* Hero Section */
+
+.hero{
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero h2{
+    color: #0077ff;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.hero button{
+    padding: 12px 25px;
+    border: none;
+    background: #0077ff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero button:hover{
+    opacity: 0.9;
+}
+
+/* About Section */
+
+.about{
+    background: white;
+    border-radius: 10px;
+    margin: 20px 10%;
+}
+
+/* Skills Section */
+
+.skills h2{
+    margin-bottom: 20px;
+}
+
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill{
+    background: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.skill:hover{
+    transform: translateY(-5px);
+}
+
+/* Projects Section */
+
+.projects h2{
+    margin-bottom: 20px;
+}
+
+.project{
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project h3{
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+
+.contact{
+    background: white;
+    border-radius: 10px;
+}
+
+.contact p{
+    margin: 10px 0;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #0077ff;
+}
+
+.contact a:hover{
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px){
+
+    .hero h1{
+        font-size: 2.2rem;
+    }
+
+    .hero h2{
+        font-size: 1.3rem;
+    }
+
+    section{
+        padding: 50px 7%;
+    }
+
+    .skills-container{
+        flex-direction: column;
+    }
+}
+    </style>
 </head>
 <body>
 
      <section class="hero">
         <h1>Hi, I'm Divanshu Choudhary</h1>
         <p>Aspiring DevOps Engineer</p>
-        <button>View My Work</button>
+        <a href="#projects">
+    <button>View My Work</button>
+</a>
     </section>
 
    <section class="about">
@@ -28,16 +190,17 @@
 <section class="skills">
     <h2>My Skills</h2>
 
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Git</li>
-        <li>GitHub</li>
-        <li>DevOps (Learning)</li>
-    </ul>
+   <div class="skills-container">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">Git</div>
+    <div class="skill">GitHub</div>
+    
+    <div class="skill">DevOps</div>
+</div> 
 </section>
 
-<section class="projects">
+<section class="projects" id="projects">
     <h2>My Projects</h2>
 
     <div class="project">
@@ -60,7 +223,7 @@
 <section class="contact">
     <h2>Contact Me</h2>
 
-    <p>Email: Choudharydivanshu95@gmail.com</p>
+    <p>Email: Choudharydivanshu75@gmail.com</p>
 
     <p>
         GitHub:
