@@ -10,7 +10,7 @@
 
 body{
     font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
+    background-color: #141515;
     color: #333;
     line-height: 1.6;
 }
@@ -60,7 +60,7 @@ section{
 /* About Section */
 
 .about{
-    background: white;
+    background: rgb(29, 28, 28);
     border-radius: 10px;
     margin: 20px 10%;
 }
@@ -78,7 +78,7 @@ section{
 }
 
 .skill{
-    background: white;
+    background: rgb(22, 22, 22);
     padding: 12px 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
