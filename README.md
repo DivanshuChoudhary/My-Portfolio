@@ -1,7 +1,7 @@
 # Personal Portfolio
 
 ## About
-This is my personal portfolio website built using HTML and CSS.
+This is my personal portfolio website built using HTML, CSS and Javascript.
 
 ## Features
 - Hero Section
