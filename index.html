@@ -3,248 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Divanshu Choudhary | Portfolio</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Reset */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
-
-body{
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Sections */
-
-section{
-    padding: 70px 10%;
-}
-
-/* Hero Section */
-
-.hero{
-    text-align: center;
-    padding: 100px 10%;
-}
-
-.hero h1{
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.hero h2{
-    color: #0077ff;
-    margin-bottom: 15px;
-}
-
-.hero p{
-    max-width: 600px;
-    margin: 0 auto 20px;
-}
-
-.hero button{
-    padding: 12px 25px;
-    border: none;
-    background: #0077ff;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.hero button:hover{
-    opacity: 0.9;
-}
-
-/* About Section */
-
-.about{
-    background: rgb(235, 229, 229);
-    border-radius: 10px;
-    margin: 20px 10%;
-}
-
-/* Skills Section */
-
-.skills h2{
-    margin-bottom: 20px;
-}
-
-.skills-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.skill{
-    background: rgb(237, 233, 233);
-    padding: 12px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.skill:hover{
-    transform: translateY(-5px);
-}
-
-/* Projects Section */
-
-.projects h2{
-    margin-bottom: 20px;
-}
-
-.project{
-    background: rgb(228, 222, 222);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.project h3{
-    margin-bottom: 10px;
-}
-
-/* Contact Section */
-
-.contact{
-    background: rgb(232, 228, 228);
-    border-radius: 10px;
-}
-
-.contact p{
-    margin: 10px 0;
-}
-
-.contact a{
-    text-decoration: none;
-    color: #0077ff;
-}
-
-.contact a:hover{
-    text-decoration: underline;
-}
-
-/* Footer */
-
-footer{
-    text-align: center;
-    padding: 20px;
-    background: #222;
-    color: white;
-}
-
-/* Responsive Design */
-
-@media (max-width: 768px){
-
-    .hero h1{
-        font-size: 2.2rem;
-    }
-
-    .hero h2{
-        font-size: 1.3rem;
-    }
-
-    section{
-        padding: 50px 7%;
-    }
-
-    .skills-container{
-        flex-direction: column;
-    }
-}
-    </style>
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
 
-     <section class="hero">
-        <h1>Hi, I'm Divanshu Choudhary</h1>
-        <p>Aspiring DevOps Engineer</p>
-        <a href="#projects">
-    <button>View My Work</button>
-</a>
-    </section>
+<!-- ================= NAVBAR ================= -->
 
-   <section class="about">
-    <h2>About Me</h2>
+<header>
 
-    <p>
-        Hi, I'm Divanshu Choudhary. I am a CSE student and aspiring DevOps Engineer.
-        Currently, I am learning Git/GitHub, CI/CD.
-        I enjoy building websites and exploring modern development tools.
-    </p>
-</section>
+    <nav>
 
-<section class="skills">
-    <h2>My Skills</h2>
+        <h2 class="logo">Divanshu.</h2>
 
-   <div class="skills-container">
-    <div class="skill">HTML</div>
-    <div class="skill">CSS</div>
-    <div class="skill">Git</div>
-    <div class="skill">GitHub</div>
+        <ul class="nav-links">
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+        <div class="menu-btn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>Hello, I'm <span>Divanshu Choudhary</span></h1>
+
+        <h2><span id="typing"></span></h2>
+
+        <p>
+
+            Passionate about Web Development and DevOps.
+            Currently learning Git, GitHub, Docker and CI/CD while
+            building modern responsive websites.
+
+        </p>
+
+       <div class="hero-buttons">
+
+    <a href="#projects" class="btn">
+        View My Work
+    </a>
+
+</div>
+    </div>
+
     
-    <div class="skill">DevOps</div>
-</div> 
+
 </section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <h2 class="section-title">
+
+        About Me
+
+    </h2>
+
+    <div class="about-content">
+
+        <p>
+
+            Hi! I'm Divanshu Choudhary,
+            a Computer Science Engineering student
+            and an aspiring DevOps Engineer.
+
+            I love learning modern technologies,
+            creating responsive websites,
+            exploring cloud tools,
+            Git, GitHub and CI/CD.
+
+            My goal is to become a professional
+            DevOps Engineer while improving my
+            web development skills.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section class="skills" id="skills">
+
+<h2 class="section-title">
+
+My Skills
+
+</h2>
+
+<div class="skills-container">
+
+<div class="skill-card">
+
+<i class="fa-brands fa-html5"></i>
+
+<h3>HTML</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-brands fa-css3-alt"></i>
+
+<h3>CSS</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-brands fa-js"></i>
+
+<h3>JavaScript</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-brands fa-git-alt"></i>
+
+<h3>Git</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-brands fa-github"></i>
+
+<h3>GitHub</h3>
+
+</div>
+
+
+<div class="skill-card">
+
+<i class="fa-solid fa-cloud"></i>
+
+<h3>CI/CD</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
 
 <section class="projects" id="projects">
-    <h2>My Projects</h2>
 
-    <div class="project">
-        <h3>TravelX Landing Page</h3>
-        <p>A travel-themed landing page built using HTML and CSS.</p>
+<h2 class="section-title">
+
+Projects
+
+</h2>
+
+<div class="project-container">
+
+<div class="project-card">
+
+<h3>TravelX Landing Page</h3>
+
+<p>
+
+Responsive travel landing page
+built using HTML and CSS.
+
+</p>
+
+<div class="project-buttons">
+
+<a href="#">Live Demo</a>
+
+<a href="#">GitHub</a>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<h3>Startup Landing Page</h3>
+
+<p>
+
+Modern startup website
+with responsive UI.
+
+</p>
+
+<div class="project-buttons">
+
+<a href="#">Live Demo</a>
+
+<a href="#">GitHub</a>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<h3>Study Portal</h3>
+
+<p>
+
+Educational website
+for students.
+
+</p>
+
+<div class="project-buttons">
+
+<a href="#">Live Demo</a>
+
+<a href="#">GitHub</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+
+
+Contact Me
+<section class="contact" id="contact">
+
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-box">
+
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+
+            <a href="mailto:choudharydivanshu75@gmail.com">
+                choudharydivanshu75@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <i class="fa-brands fa-github"></i>
+
+            <a href="https://github.com/DivanshuChoudhary" target="_blank">
+                github.com/DivanshuChoudhary
+            </a>
+        </p>
+
+        <p>
+            <i class="fa-brands fa-linkedin"></i>
+
+            <a href="https://www.linkedin.com/in/divanshu-choudhary" target="_blank">
+                linkedin.com/in/divanshu-choudhary
+            </a>
+        </p>
+
     </div>
 
-    <div class="project">
-        <h3>Startup Landing Page</h3>
-        <p>A modern startup landing page with responsive design.</p>
-    </div>
-
-    <div class="project">
-        <h3>Study Portal Page</h3>
-        <p>A student-focused web page for learning resources and study content.</p>
-    </div>
 </section>
 
 
-<section class="contact">
-    <h2>Contact Me</h2>
-
-    <p>Email: Choudharydivanshu75@gmail.com</p>
-
-    <p>
-        GitHub:
-        <a href="https://github.com/yourusername" target="_blank">
-            github.com/DivanshuChoudhary
-        </a>
-    </p>
-
-    <p>
-        LinkedIn:
-        <a href="https://linkedin.com/in/yourusername" target="_blank">
-            linkedin.com/in/Divanshuchoudhary
-        </a>
-    </p>
-</section>
-
+<!-- ================= FOOTER ================= -->
 
 <footer>
-    <p>&copy; 2026 DivanshuChoudhary. All Rights Reserved.</p>
-</footer> 
 
- <script src="script.js"></script>
+<p>
+
+© 2026 Divanshu Choudhary
+
+Made with ❤️ using HTML CSS JavaScript
+
+</p>
+
+</footer>
+
+<!-- Back To Top -->
+
+<button id="topBtn">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script src="script.js"></script>
+
 </body>
 </html>
